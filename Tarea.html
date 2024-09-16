@@ -1,0 +1,143 @@
+
+<!DOCTYPE html><!-- Indica al navegador el tipo de documento que  se va a estar usando y su sintaxis -->
+
+
+<html><!-- Marca el inicio de la raiz donde van a ir los elementos de la misma--> 
+
+<head><!-- Marca la cabeccera del documento html, contiene la informacion, titulo, enlaces, estilos y scripts -->
+<title>Primera Tarea de Diseño Web</title><!-- Define el titulo del documento -->
+<base href="https://www.tareadisenio.com/" target="_blank">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" /> <!--define un enlace a un archivo externo-->
+<meta name="Autor" content="Ana Paula Fernandez Alfaro"/>
+<meta name="copyright" content="1ra Tarea de Diseño web"/>
+</head>
+
+<body>
+    <hgroup>
+        <h1>Primera tarea</h1>
+        <h2>de</h2>
+        <h3>Diseno</h3>
+        <h4>Web</h4>
+    </hgroup>
+    <div class="clase">
+        <p>Esto es una pagina de practica</p>
+    </div>
+    <iframe id="iframe"
+    title="ejemplo"
+    width="300"
+    height="200"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+</iframe>
+
+<ul>
+    <li>Primero</li>
+    <li>Segundo</li>
+    <li>Tercero</li>
+    <li>Cuarto</li>
+</ul>
+
+<ol type="I">
+    <li>Primero</li>
+    <li>Segundo</li>
+    <li>Tercero</li>
+    <li>Cuarto</li>
+</ol>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Lenguaje para hacer paginas web</dd>
+  </dl>
+
+  <figure>
+    <img src="Ilustración34.jpg" alt="Desc de la imagen">
+    <br>
+    <figcaption>Un dibujo hecho por mi</figcaption>
+  </figure>
+
+  <pre>
+    prueva de pre
+    prueva de pre
+      prueva de pre con sangría
+  </pre>
+
+  <blockquote>
+    "Esto es para escribir cuotas sacadas de otros lugares." - alguien
+  </blockquote>
+
+  <p>una frase corta <q cite="https://es.wikipedia.org/wiki/Marie_Curie">otra frase corta</q>.</p>
+  <p>esta es una <abbr title="Lenguaje de Marcado de Hipertexto">Prueba de abbr</abbr> texto de prueba.</p>
+  <p>esto es una <dfn title="Prueba de dfn">DFN</dfn> es una prueba.</p>
+  <p>usa el atajo de teclado <kbd>Ctrl</kbd> + <kbd>F</kbd></p>
+  <br>
+  <p><b>la b hace que se ponga el texto en negrita.</b></p>
+  <p><strong>el strong aparte de poner el texto en negrita</strong></p>
+  <p><i>La i pone el texto en cursiva</i></p>
+  <p><em>El em pone el texto en cursiva tambien</em></p>
+  <br>
+  <p>Mark <mark style="background-color: rgb(155, 209, 100);">resalta</mark> palabras con color</p>
+  <p><small>Small hace que el texto se vea pequenio</small></p>
+  <p><del>Del define un texto eliminado de la pagina</del></p>
+  <p><ins>Ins sirve para definir un texto insertado en la pagina</ins></p>
+  <p>Sub define un <sub>subindice</sub> del documento</p>
+  <p>el sup hace que se muestre un texto mas <sup>pequeno y arriba</sup> que el resto del texto</p>
+  <p> <time datetime="2024-09-14">Time muestra una fecha u hora del dia</time></p>
+  <p>permite asociar datos como precios <data value="5">$5</data></p>
+  <p>span puede servir para <span id="special-text">marcar texto</span></p>
+  <p>a Sirve para colocar enlaces como: <a href="https://youtu.be/dQw4w9WgXcQ?si=XKkR-QTiUlXce8YT">Ejemplo</a> para más información.</p>
+
+  <br>
+  <img src="Ilustración34.jpg" usemap="#simple-map" alt="ilu Simple">
+  <map name="simple-map">
+    <area shape="rect" coords="34,44,270,350" href="https://www.ejemplo.com" alt="ejemplo de area">
+</map>
+
+  <picture>
+    <source src="imagen-800w.jpg" media="(min-width: 800px)">
+    <img src="Ilustración34.jpg" alt="Picture se encarga de agregar una imagen con direcciones">
+  </picture>
+
+  <pre>
+    <code>
+    def saludo():
+        print("Hola Mundo")
+    </code>
+</pre>
+
+<canvas id="miCanvas" width="200" height="100" style="border:2px solid #000000;"></canvas>  
+<script>  
+    var canvas = document.getElementById("miCanvas");  
+    var contexto = canvas.getContext("2d");  
+    contexto.fillStyle = "#FFFFFFF";  
+    contexto.fillRect(20, 20, 150, 50);  
+</script>   
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="80" stroke="black" stroke-width="3" fill="red"/>
+    </svg>
+
+    <audio controls></audio>
+        <source src="SonidoTrancición.mp3" type="audio/mpeg">
+    </audio>
+
+    <video width="640" height="360" controls></video>
+        <source src="ilustracion_final.mp4" type="video/mp4">
+        <track src="subtitulos-en.vtt" kind="subtitles" srclang="en" label="Inglés">
+        <track src="subtitulos-es.vtt" kind="subtitles" srclang="es" label="Español">
+    </video>
+
+    <iframe src="https://youtu.be/dQw4w9WgXcQ?si=1zJc0AhSgeucddcL" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+  <details>
+    <summary>Saber Mas</summary>
+    <p>Esta tarea se puede entregar hasta el lunes 16 a las 11:59</p>
+  </details>
+
+    <footer id="footer">
+        <address>
+            Desarrollado por <a href="mailto:tarea@gmail.com">Ana Paula Fernandez</a><br>
+            1234 Calle, Ciudad, País
+        </address>
+    </footer>
+</body>
+
+</html>
